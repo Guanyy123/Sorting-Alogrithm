@@ -11,6 +11,8 @@ def bubbleSort(arr):
     return arr
 
 #选择排序入队
+#时间复杂度O(N^2) 
+#空间复杂度O(1)
 def selectSort(arr):
     n = len(arr)
     for i in range(n-1):
@@ -24,6 +26,8 @@ def selectSort(arr):
     return arr
 
 #插入排序入队
+#时间复杂度O(N^2)
+# 空间复杂度O(1)
 def insertSort(arr):
     n =  len(arr)
     if n < 1:
@@ -38,7 +42,9 @@ def insertSort(arr):
         arr[j] = key        
     return arr
 
-#快速排序 空间复杂度O(logN), 时间复杂度
+#   快速排序
+# 时间复杂度O(logN), 
+# 空间复杂度O(NlogN)
 def partation(arr, left, right):
     #将左边第一个数定为key
     key = left
@@ -65,8 +71,4 @@ def quickSortMain(arr):
    return quickSort(arr, 0, len(arr)-1)
 
 if __name__ == "__main__":
-    # arr = [3,5,9,2,7,1,8,4,6,7]
-    # print(quickSortMain(arr))
-    s = "管乐阳正在学习"
-    s = "管乐阳"
-    print(s)
+    pass
